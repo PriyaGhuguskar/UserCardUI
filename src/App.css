@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    min-height: 100vh;
+    width: 100vw;
+    font-size-adjust: 100%;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-2 {
+    height: 3.0rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgba(205, 205, 205, 0.6);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    width: 350px;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.25rem;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 20px;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.card-1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background-color: rgba(205, 205, 205, 0.6);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card-3 div {
+    height: 3rem;
+    width: 4rem;
+    margin: 0px 10px;
+    border-radius: 1rem;
+    background-color: rgba(205, 205, 205, 0.6);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite;
+}
+
+.card-4 {
+    height: 3rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgba(205, 205, 205, 0.6);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) alternate-reverse infinite;
+}
+
+@keyframes pulse {
+    to {
+        opacity: .3;
+    }
 }

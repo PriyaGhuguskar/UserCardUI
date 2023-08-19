@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './Component/Card';
+import pageBackground from './assets/bg.webp'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" bg-cover h-screen w-full flex items-center justify-center flex-col" style={{ backgroundImage: `url(${pageBackground})` }}>
+      <Card />
+      {/*  */}
     </div>
   );
 }
